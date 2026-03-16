@@ -1,65 +1,110 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fundación S01E01</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-  <style>
-    body{
-      background:black;
-      color:white;
-      text-align:center;
-      font-family:sans-serif;
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    #copy-popup {
-      position: fixed;
-      top: 30px;
-      right: 20px;
-      background: transparent;
-      color: #fff;
-      padding: 10px 20px;
-      border-radius: 5px;
-      box-shadow: 0 0 10px #00000080;
-      display: none;
-      z-index: 1000;
-      font-weight: bold;
-      border: 1px solid #7ce3ff;
-    }
-  </style>
+<title>Fundación S01E01</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+
+<style>
+
+body{
+background:#0f0f0f;
+color:white;
+font-family:sans-serif;
+text-align:center;
+margin:0;
+padding:40px;
+}
+
+.card{
+max-width:500px;
+margin:auto;
+background:#1c1c1c;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 0 30px rgba(0,0,0,0.5);
+}
+
+.cover{
+height:260px;
+background-size:cover;
+background-position:center;
+}
+
+.title{
+font-size:24px;
+margin-top:15px;
+}
+
+.info{
+color:#aaa;
+margin-bottom:20px;
+}
+
+.btn{
+display:inline-block;
+padding:10px 20px;
+background:#1da1f2;
+color:white;
+border:none;
+border-radius:6px;
+cursor:pointer;
+margin-bottom:20px;
+}
+
+.icons{
+margin-bottom:20px;
+}
+
+.icons i{
+margin:0 8px;
+color:#aaa;
+}
+
+</style>
 
 </head>
+
 <body>
 
-<div id="copy-popup">URL copiada</div>
+<div class="card">
 
-<h1>Fundación S01E01</h1>
+<div class="cover" style="background-image:url('https://image.tmdb.org/t/p/w780/gIc3j7pgvyyniyGjQPHlgYTu2IX.jpg');"></div>
 
-<p>Reproducir desde Rave</p>
+<h1 class="title">Fundación</h1>
 
-<script>
-function copiarURL(url) {
-  navigator.clipboard.writeText(url).then(() => {
-    const popup = document.getElementById('copy-popup');
-    popup.style.display = 'block';
-    setTimeout(() => popup.style.display = 'none', 2000);
-  });
-}
-</script>
+<p class="info">Temporada 1 • Episodio 1</p>
+
+<button class="btn" onclick="alert('Abre esta página desde Rave para reproducir el video')">
+Ver en Rave
+</button>
+
+<div class="icons">
+<i class="fa-brands fa-telegram"></i>
+<i class="fa-brands fa-facebook"></i>
+<i class="fa-brands fa-instagram"></i>
+</div>
+
+</div>
+
+<!-- METADATA QUE RAVE DETECTA -->
 
 <script type="application/ld+json">
 {
  "@context":"https://schema.org",
  "@type":"VideoObject",
  "name":"Fundación S01E01",
- "description":"Video para Rave",
- "thumbnailUrl":"https://image.tmdb.org/t/p/w780/gIc3j7pgvyyniyGjQPHlgYTu2IX.jpg",
- "uploadDate":"2025-07-05T12:00:00+00:00",
+ "description":"Serie Fundación episodio 1 en español",
+ "thumbnailUrl":"https://th.bing.com/th/id/R.1e6903d7110e3f729060cbde021b0e6a?rik=87sVzpPBaiIX5w&pid=ImgRaw&r=0",
+ "uploadDate":"2026-01-01T12:00:00+00:00",
  "duration":"PT01H00M00S",
  "contentUrl":"https://ia803204.us.archive.org/32/items/fundacion-s-01-e-01-lat-ravestream/Fundacion_S01E01_Lat.mp4",
- "embedUrl":"https://tu-pagina.com"
+ "embedUrl":"https://watch-with-us-now.github.io/fasfsafsa/"
 }
 </script>
 
