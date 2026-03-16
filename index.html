@@ -1,30 +1,49 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <link rel="canonical" href="https://archive.org/details/fundacion-s-01-e-01-lat-ravestream" />
-    
-    <meta property="og:site_name" content="Archive">
-    <meta property="og:title" content="Fundación S01E01">
-    <meta property="og:type" content="video.other">
-    
-    <meta property="og:video" content="https://archive.org/download/fundacion-s-01-e-01-lat-ravestream/Fundacion_S01E01_Lat.ia.mp4">
-    <meta property="og:video:secure_url" content="https://archive.org/download/fundacion-s-01-e-01-lat-ravestream/Fundacion_S01E01_Lat.ia.mp4">
-    <meta property="og:video:type" content="video/mp4">
-    <meta property="og:video:width" content="1280">
-    <meta property="og:video:height" content="720">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player - Rave</title>
 
     <meta name="twitter:card" content="player">
-    <meta name="twitter:player" content="https://archive.org/embed/fundacion-s-01-e-01-lat-ravestream">
+    <meta name="twitter:title" content="Reproductor Dailymotion">
+    <meta name="twitter:player" content="https://www.dailymotion.com/embed/video/k6VB2Njgh8NidCF97CI?autoplay=1">
     <meta name="twitter:player:width" content="1280">
     <meta name="twitter:player:height" content="720">
 
+    <meta property="og:type" content="video.other">
+    <meta property="og:video" content="https://www.dailymotion.com/embed/video/k6VB2Njgh8NidCF97CI">
+    <meta property="og:video:secure_url" content="https://www.dailymotion.com/embed/video/k6VB2Njgh8NidCF97CI">
+    <meta property="og:video:type" content="text/html">
+    <meta property="og:video:width" content="1280">
+    <meta property="og:video:height" content="720">
+
     <style>
-        body { background: #000; margin: 0; }
-        iframe { width: 100vw; height: 100vh; border: none; }
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; background: #000; overflow: hidden; }
+        .container { width: 100vw; height: 100vh; }
+        iframe { width: 100%; height: 100%; border: none; }
     </style>
 </head>
 <body>
-    <iframe src="https://archive.org/embed/fundacion-s-01-e-01-lat-ravestream?autoplay=1" allowfullscreen></iframe>
+
+    <div class="container">
+        <iframe 
+            src="https://www.dailymotion.com/embed/video/k6VB2Njgh8NidCF97CI?autoplay=1&mute=0" 
+            allow="autoplay; fullscreen; web-share" 
+            allowfullscreen>
+        </iframe>
+    </div>
+
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "VideoObject",
+      "name": "Dailymotion Video",
+      "embedUrl": "https://www.dailymotion.com/embed/video/k6VB2Njgh8NidCF97CI",
+      "thumbnailUrl": "https://www.dailymotion.com/thumbnail/video/k6VB2Njgh8NidCF97CI",
+      "uploadDate": "2026-03-16T12:00:00Z"
+    }
+    </script>
+
 </body>
 </html>
