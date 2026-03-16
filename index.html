@@ -1,30 +1,67 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundación S01E01</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
 
-<meta charset="UTF-8">
-<title>Fundación S01E01</title>
+  <style>
+    body{
+      background:black;
+      color:white;
+      text-align:center;
+      font-family:sans-serif;
+    }
+
+    #copy-popup {
+      position: fixed;
+      top: 30px;
+      right: 20px;
+      background: transparent;
+      color: #fff;
+      padding: 10px 20px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px #00000080;
+      display: none;
+      z-index: 1000;
+      font-weight: bold;
+      border: 1px solid #7ce3ff;
+    }
+  </style>
+
+</head>
+<body>
+
+<div id="copy-popup">URL copiada</div>
+
+<h1>Fundación S01E01</h1>
+
+<p>Reproducir desde Rave</p>
+
+<script>
+function copiarURL(url) {
+  navigator.clipboard.writeText(url).then(() => {
+    const popup = document.getElementById('copy-popup');
+    popup.style.display = 'block';
+    setTimeout(() => popup.style.display = 'none', 2000);
+  });
+}
+</script>
 
 <script type="application/ld+json">
 {
  "@context":"https://schema.org",
  "@type":"VideoObject",
- "name":"Fundacion S01E01",
- "contentUrl":"https://ia803204.us.archive.org/32/items/fundacion-s-01-e-01-lat-ravestream/Fundacion_S01E01_Lat.mp4"
+ "name":"Fundación S01E01",
+ "description":"Video para Rave",
+ "thumbnailUrl":"https://image.tmdb.org/t/p/w780/gIc3j7pgvyyniyGjQPHlgYTu2IX.jpg",
+ "uploadDate":"2025-07-05T12:00:00+00:00",
+ "duration":"PT01H00M00S",
+ "contentUrl":"https://ia803204.us.archive.org/32/items/fundacion-s-01-e-01-lat-ravestream/Fundacion_S01E01_Lat.mp4",
+ "embedUrl":"https://tu-pagina.com"
 }
 </script>
-
-</head>
-
-<body style="background:black;color:white;text-align:center;font-family:sans-serif">
-
-<h1>Fundación S01E01</h1>
-<p>Abre esta página desde Rave</p>
-
-<video width="800" controls>
-<source src="https://ia803204.us.archive.org/32/items/fundacion-s-01-e-01-lat-ravestream/Fundacion_S01E01_Lat.mp4" type="video/mp4">
-</video>
 
 </body>
 </html>
